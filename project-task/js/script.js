@@ -89,7 +89,7 @@ var q9_v1 = 7;  //P
 var q9_v2 = 5;  //R
 var q9_v3 = 8; //T
 
-document.getElementById("question-9").innerHTML = "9. Create a program to calculate simple intrest: ";
+document.getElementById("question-9").innerHTML = " Q9. Create a program to calculate simple intrest: ";
 document.getElementById("formula-simple-intrest").innerHTML = "Simple Intrest = (P * R * T) / 100 ";
 document.getElementById("q9-value").innerHTML = "values : p = " + q9_v1 + " & R = " + q9_v2 + " & T = " + q9_v3;
 document.getElementById("q9-answer").innerHTML = "Ans: " + ((q9_v1 * q9_v2 * q9_v3) / 100);
