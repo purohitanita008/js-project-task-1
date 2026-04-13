@@ -95,4 +95,119 @@ document.getElementById("q9-value").innerHTML = "values : p = " + q9_v1 + " & R 
 document.getElementById("q9-answer").innerHTML = "Ans: " + ((q9_v1 * q9_v2 * q9_v3) / 100);
 
 
+// Q10 Even or Odd
+var num = 7;
+document.getElementById("q10").innerHTML = "Q10. Check even or odd";
+document.getElementById("q10-answer").innerHTML =
+    (num % 2 === 0) ? "Even Number" : "Odd Number";
 
+
+// Q11 Positive, Negative, Zero
+var n = -5;
+document.getElementById("q11").innerHTML = "Q11. Check number type";
+if (n > 0)
+    document.getElementById("q11-answer").innerHTML = "Positive";
+else if (n < 0)
+    document.getElementById("q11-answer").innerHTML = "Negative";
+else
+    document.getElementById("q11-answer").innerHTML = "Zero";
+
+
+// Q12 Largest of 2 numbers
+var a = 10, b = 20;
+document.getElementById("q12").innerHTML = "Q12. Largest of two numbers";
+document.getElementById("q12-answer").innerHTML =
+    (a > b) ? a + " is largest" : b + " is largest";
+
+
+// Q13 Largest of 3 numbers
+var x = 5, y = 15, z = 10;
+document.getElementById("q13").innerHTML = "Q13. Largest of three numbers";
+var largest = (x > y && x > z) ? x : (y > z ? y : z);
+document.getElementById("q13-answer").innerHTML = largest + " is largest";
+
+
+// Q14 Voting eligibility
+var age = 18;
+document.getElementById("q14").innerHTML = "Q14. Voting eligibility";
+document.getElementById("q14-answer").innerHTML =
+    (age >= 18) ? "Eligible for voting" : "Not eligible";
+
+
+// Q15 Grade system
+var marks = 78;
+document.getElementById("q15").innerHTML = "Q15. Grade calculation";
+if (marks >= 90)
+    document.getElementById("q15-answer").innerHTML = "Grade A";
+else if (marks >= 75)
+    document.getElementById("q15-answer").innerHTML = "Grade B";
+else if (marks >= 50)
+    document.getElementById("q15-answer").innerHTML = "Grade C";
+else
+    document.getElementById("q15-answer").innerHTML = "Fail";
+
+
+// Q16 Leap year
+var year = 2024;
+document.getElementById("q16").innerHTML = "Q16. Leap Year Check";
+if ((year % 4 === 0 && year % 100 !== 0) || year % 400 === 0)
+    document.getElementById("q16-answer").innerHTML = "Leap Year";
+else
+    document.getElementById("q16-answer").innerHTML = "Not Leap Year";
+
+
+// Q17 Divisible by 5 and 11
+var num2 = 55;
+document.getElementById("q17").innerHTML = "Q17. Divisible by 5 and 11";
+if (num2 % 5 === 0 && num2 % 11 === 0)
+    document.getElementById("q17-answer").innerHTML = "Divisible by both";
+else
+    document.getElementById("q17-answer").innerHTML = "Not divisible";
+
+
+// Q18 Calculator using switch
+var n1 = 10, n2 = 5, op = "+";
+document.getElementById("q18").innerHTML = "Q18. Simple Calculator";
+var result;
+
+switch(op) {
+    case "+": result = n1 + n2; break;
+    case "-": result = n1 - n2; break;
+    case "*": result = n1 * n2; break;
+    case "/": result = n1 / n2; break;
+    default: result = "Invalid operator";
+}
+
+document.getElementById("q18-answer").innerHTML = "Result: " + result;
+
+
+// Q19 BMI
+var weight = 60, height = 1.6;
+var bmi = weight / (height * height);
+
+document.getElementById("q19").innerHTML = "Q19. BMI Calculator";
+
+if (bmi < 18.5)
+    document.getElementById("q19-answer").innerHTML = "Underweight";
+else if (bmi < 25)
+    document.getElementById("q19-answer").innerHTML = "Normal";
+else if (bmi < 30)
+    document.getElementById("q19-answer").innerHTML = "Overweight";
+else
+    document.getElementById("q19-answer").innerHTML = "Obese";
+
+
+// Q20 Electricity Bill
+var units = 120;
+var bill;
+
+document.getElementById("q20").innerHTML = "Q20. Electricity Bill";
+
+if (units <= 50)
+    bill = units * 1;
+else if (units <= 100)
+    bill = units * 2;
+else
+    bill = units * 3;
+
+document.getElementById("q20-answer").innerHTML = "Bill = ₹" + bill;
